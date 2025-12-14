@@ -1,0 +1,30 @@
+{
+  "tool": "SQL Injection Tester",
+  "status": "warning",
+  "timestamp": "2025-12-d 22:18:24",
+  "output": "SQL Injection Test for https://obinance.com/:\nTested 4 payloads\n⚠ Potential SQL Injection vulnerability detected!\nSuspicious responses found for payloads:\n  - '\n  - \"\n  - ' OR '1'='1\n  - \" OR \"1\"=\"1\n",
+  "details": {
+    "test_results": [
+      {
+        "payload": "'",
+        "status": 200,
+        "vulnerable": true
+      },
+      {
+        "payload": "\"",
+        "status": 200,
+        "vulnerable": true
+      },
+      {
+        "payload": "' OR '1'='1",
+        "status": 200,
+        "vulnerable": true
+      },
+      {
+        "payload": "\" OR \"1\"=\"1",
+        "status": 200,
+        "vulnerable": true
+      }
+    ]
+  }
+}

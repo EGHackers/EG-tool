@@ -1,0 +1,12 @@
+{
+  "tool": "DNS Enumeration",
+  "status": "success",
+  "timestamp": "2025-12-d 22:17:35",
+  "output": "DNS Records for obinance.com:\n\n",
+  "details": {
+    "A": [],
+    "AAAA": [],
+    "MX": [],
+    "TXT": []
+  }
+}

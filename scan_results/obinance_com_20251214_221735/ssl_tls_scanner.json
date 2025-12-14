@@ -1,0 +1,7 @@
+{
+  "tool": "SSL/TLS Scanner",
+  "status": "success",
+  "timestamp": "2025-12-d 22:17:59",
+  "output": "SSL/TLS Certificate Info for https://obinance.com/:\n✓ SSL certificate is valid\n✓ Connection is encrypted\n⚠ For detailed SSL analysis, visit: https://www.ssllabs.com/ssltest/\n",
+  "details": {}
+}

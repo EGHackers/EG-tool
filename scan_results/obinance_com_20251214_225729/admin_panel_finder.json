@@ -1,0 +1,25 @@
+{
+  "tool": "Admin Panel Finder",
+  "status": "critical",
+  "timestamp": "2025-12-14 22:59:09",
+  "output": "Admin Panel Finder Results for https://obinance.com/:\n\n🚨 \u001b[31mFOUND 3 ADMIN PANELS:\u001b[0m\n\n🔐 \u001b[33m/login\u001b[0m\n   URL: https://obinance.com/login\n   Status: 200\n\n🔐 \u001b[33m/controlpanel\u001b[0m\n   URL: https://obinance.com/controlpanel\n   Status: 200\n\n🔐 \u001b[33m/cpanel\u001b[0m\n   URL: https://obinance.com/cpanel\n   Status: 200\n\n🔧 \u001b[33mExploit Suggestions:\u001b[0m\n1. Try default credentials (admin/admin, admin/password, etc.)\n2. Use brute force tools like Hydra or Patator\n3. Check for authentication bypass vulnerabilities\n",
+  "details": {
+    "found_panels": [
+      {
+        "path": "/login",
+        "url": "https://obinance.com/login",
+        "status": 200
+      },
+      {
+        "path": "/controlpanel",
+        "url": "https://obinance.com/controlpanel",
+        "status": 200
+      },
+      {
+        "path": "/cpanel",
+        "url": "https://obinance.com/cpanel",
+        "status": 200
+      }
+    ]
+  }
+}

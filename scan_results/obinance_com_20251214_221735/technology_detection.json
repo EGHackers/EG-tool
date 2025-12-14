@@ -1,0 +1,15 @@
+{
+  "tool": "Technology Detection",
+  "status": "success",
+  "timestamp": "2025-12-d 22:18:00",
+  "output": "Technology Detection for https://obinance.com/:\nDetected technologies:\n  - Server: cloudflare\n  - Angular\n  - Vue.js\n  - jQuery\n  - Bootstrap\n",
+  "details": {
+    "technologies": [
+      "Server: cloudflare",
+      "Angular",
+      "Vue.js",
+      "jQuery",
+      "Bootstrap"
+    ]
+  }
+}

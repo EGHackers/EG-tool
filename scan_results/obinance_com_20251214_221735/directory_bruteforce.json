@@ -1,0 +1,34 @@
+{
+  "tool": "Directory Bruteforce",
+  "status": "warning",
+  "timestamp": "2025-12-d 22:18:12",
+  "output": "Directory Bruteforce for https://obinance.com/:\nFound 4 accessible paths:\n  /login (200) - 71837 bytes\n  /config (200) - 0 bytes\n  /test (200) - 67 bytes\n  /robots.txt (200) - 1679 bytes\n",
+  "details": {
+    "found_paths": [
+      {
+        "path": "/login",
+        "url": "https://obinance.com/login",
+        "status": 200,
+        "size": 71837
+      },
+      {
+        "path": "/config",
+        "url": "https://obinance.com/config",
+        "status": 200,
+        "size": 0
+      },
+      {
+        "path": "/test",
+        "url": "https://obinance.com/test",
+        "status": 200,
+        "size": 67
+      },
+      {
+        "path": "/robots.txt",
+        "url": "https://obinance.com/robots.txt",
+        "status": 200,
+        "size": 1679
+      }
+    ]
+  }
+}

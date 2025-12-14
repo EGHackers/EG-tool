@@ -1,0 +1,58 @@
+{
+  "tool": "Directory Bruteforce",
+  "status": "warning",
+  "timestamp": "2025-12-14 22:58:58",
+  "output": "Directory Bruteforce for https://obinance.com/:\nFound 8 accessible paths:\n  • /login (200) - 71837 bytes\n  • /controlpanel (200) - 34619 bytes\n  • /cpanel (200) - 34619 bytes\n  • /config (200) - 0 bytes\n  • /test (200) - 67 bytes\n  • /api (200) - 3211 bytes\n  • /uploads (200) - 7812 bytes\n  • /robots.txt (200) - 1679 bytes\n\n🔧 \u001b[33mExploit Suggestions:\u001b[0m\n  • /login: Try default credentials (admin/admin, admin/password)\n",
+  "details": {
+    "found_dirs": [
+      {
+        "path": "/login",
+        "url": "https://obinance.com/login",
+        "status": 200,
+        "size": 71837
+      },
+      {
+        "path": "/controlpanel",
+        "url": "https://obinance.com/controlpanel",
+        "status": 200,
+        "size": 34619
+      },
+      {
+        "path": "/cpanel",
+        "url": "https://obinance.com/cpanel",
+        "status": 200,
+        "size": 34619
+      },
+      {
+        "path": "/config",
+        "url": "https://obinance.com/config",
+        "status": 200,
+        "size": 0
+      },
+      {
+        "path": "/test",
+        "url": "https://obinance.com/test",
+        "status": 200,
+        "size": 67
+      },
+      {
+        "path": "/api",
+        "url": "https://obinance.com/api",
+        "status": 200,
+        "size": 3211
+      },
+      {
+        "path": "/uploads",
+        "url": "https://obinance.com/uploads",
+        "status": 200,
+        "size": 7812
+      },
+      {
+        "path": "/robots.txt",
+        "url": "https://obinance.com/robots.txt",
+        "status": 200,
+        "size": 1679
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "SSRF Tester",
+  "status": "success",
+  "timestamp": "2025-12-d 22:19:13",
+  "output": "SSRF Test for https://obinance.com/:\nSSRF testing requires specific parameters and endpoints\nThis is a basic check - manual testing recommended\n\nCommon SSRF parameters to test manually:\n  https://obinance.com/?url=http://169.254.169.254/latest/meta-data/\n  https://obinance.com/?path=http://169.254.169.254/latest/meta-data/\n  https://obinance.com/?file=http://169.254.169.254/latest/meta-data/\n  https://obinance.com/?load=http://169.254.169.254/latest/meta-data/\n  https://obinance.com/?include=http://169.254.169.254/latest/meta-data/\n\nNote: SSRF testing should be done carefully\n",
+  "details": {
+    "tested_params": [
+      "url",
+      "path",
+      "file",
+      "load",
+      "include"
+    ],
+    "note": "Manual testing required"
+  }
+}

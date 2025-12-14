@@ -1,0 +1,9 @@
+{
+  "tool": "Git Repository Scanner",
+  "status": "success",
+  "timestamp": "2025-12-d 22:19:08",
+  "output": "Git Repository Scanner for https://obinance.com/:\nNo exposed Git repository found\n",
+  "details": {
+    "found_git": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "tool": "Security Headers Check",
+  "status": "warning",
+  "timestamp": "2025-12-d 22:18:29",
+  "output": "Security Headers Check for https://obinance.com/:\n\nRequired Security Headers:\n  ✓ Content-Security-Policy: frame-ancestors 'self';\n  ✗ Strict-Transport-Security: MISSING\n  ✗ X-Frame-Options: MISSING\n  ✗ X-Content-Type-Options: MISSING\n  ✗ Referrer-Policy: MISSING\n  ✗ Permissions-Policy: MISSING\n\nRecommended Security Headers:\n  ⚠ X-XSS-Protection: Not present\n  ✓ Cache-Control: no-store, no-cache, must-revalidate\n  ⚠ Clear-Site-Data: Not present\n\nSecurity Headers Score: 22.2%\n\n⚠ Missing 5 critical security headers\n",
+  "details": {
+    "score": 22.22222222222222,
+    "missing_required": [
+      "Strict-Transport-Security",
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "missing_recommended": [
+      "X-XSS-Protection",
+      "Clear-Site-Data"
+    ],
+    "present_headers": [
+      "Content-Security-Policy"
+    ]
+  }
+}

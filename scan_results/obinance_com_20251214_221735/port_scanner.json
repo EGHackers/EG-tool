@@ -1,0 +1,33 @@
+{
+  "tool": "Port Scanner",
+  "status": "warning",
+  "timestamp": "2025-12-d 22:17:56",
+  "output": "Port Scan Results for 104.21.68.91:\n\n🔓 \u001b[33mOPEN PORTS (5):\u001b[0m\n\nPORT     SERVICE         STATUS    \n-----------------------------------\n25       SMTP            \u001b[31mCRITICAL\u001b[0m\n80       HTTP            \u001b[33mOPEN\u001b[0m\n443      HTTPS           \u001b[33mOPEN\u001b[0m\n8080     HTTP-Alt        \u001b[33mOPEN\u001b[0m\n8443     HTTPS-Alt       \u001b[33mOPEN\u001b[0m\n\n⚠ \u001b[33mSECURITY ANALYSIS:\u001b[0m\n🔴 \u001b[31mCritical services exposed:\u001b[0m\n   - SMTP\n\n🔒 \u001b[32mRECOMMENDATIONS:\u001b[0m\n1. Close unnecessary ports\n2. Use firewall rules\n3. Implement network segmentation\n4. Regular port scanning\n5. Monitor network traffic\n",
+  "details": {
+    "open_ports": [
+      [
+        25,
+        "SMTP"
+      ],
+      [
+        80,
+        "HTTP"
+      ],
+      [
+        443,
+        "HTTPS"
+      ],
+      [
+        8080,
+        "HTTP-Alt"
+      ],
+      [
+        8443,
+        "HTTPS-Alt"
+      ]
+    ],
+    "critical_ports": [
+      25
+    ]
+  }
+}

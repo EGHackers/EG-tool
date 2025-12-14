@@ -1,0 +1,12 @@
+{
+  "tool": "Subdomain Scanner",
+  "status": "warning",
+  "timestamp": "2025-12-d 22:17:39",
+  "output": "Subdomain Scan Results for obinance.com:\n\n🌐 \u001b[33mFOUND 1 SUBDOMAINS:\u001b[0m\n\n  • www.obinance.com\n\n⚠ \u001b[33mSECURITY NOTE:\u001b[0m\nEach subdomain is a potential attack vector.\nEnsure all subdomains are properly secured.\n",
+  "details": {
+    "found_subs": [
+      "www.obinance.com"
+    ],
+    "total_scanned": 27
+  }
+}

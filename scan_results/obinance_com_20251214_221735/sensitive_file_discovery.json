@@ -1,0 +1,9 @@
+{
+  "tool": "Sensitive File Discovery",
+  "status": "success",
+  "timestamp": "2025-12-d 22:18:21",
+  "output": "Sensitive File Discovery for https://obinance.com/:\nNo sensitive files found\n",
+  "details": {
+    "found_files": []
+  }
+}

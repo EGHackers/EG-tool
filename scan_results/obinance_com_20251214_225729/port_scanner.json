@@ -1,0 +1,30 @@
+{
+  "tool": "Port Scanner",
+  "status": "warning",
+  "timestamp": "2025-12-14 22:57:46",
+  "output": "Port Scan Results for 104.21.68.91:\n\n🔓 \u001b[33mOPEN PORTS (5):\u001b[0m\n\n  • Port 25: SMTP\n  • Port 80: HTTP\n  • Port 443: HTTPS\n  • Port 8080: HTTP-Alt\n  • Port 8443: HTTPS-Alt\n",
+  "details": {
+    "open_ports": [
+      [
+        25,
+        "SMTP"
+      ],
+      [
+        80,
+        "HTTP"
+      ],
+      [
+        443,
+        "HTTPS"
+      ],
+      [
+        8080,
+        "HTTP-Alt"
+      ],
+      [
+        8443,
+        "HTTPS-Alt"
+      ]
+    ]
+  }
+}

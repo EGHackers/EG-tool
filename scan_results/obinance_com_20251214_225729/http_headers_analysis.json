@@ -1,0 +1,18 @@
+{
+  "tool": "HTTP Headers Analysis",
+  "status": "warning",
+  "timestamp": "2025-12-14 22:58:58",
+  "output": "HTTP Headers Analysis for https://obinance.com/:\nStatus Code: 200\nServer: cloudflare\n✓ Content-Security-Policy: Present (CSP)\n✗ Strict-Transport-Security: Missing\n✗ X-Frame-Options: Missing\n✗ X-Content-Type-Options: Missing\n✗ X-XSS-Protection: Missing\n✗ Referrer-Policy: Missing\n",
+  "details": {
+    "total_headers": 16,
+    "missing_security_headers": [
+      "Strict-Transport-Security",
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "X-XSS-Protection",
+      "Referrer-Policy"
+    ],
+    "server": "cloudflare",
+    "content_type": "text/html; charset=UTF-8"
+  }
+}
